@@ -15,7 +15,8 @@ describe Neighborhood do
 
   describe 'instance methods' do
     it 'knows about all the available listings given a date range' do
-      expect(@nabe1.neighborhood_openings('2014-05-01', '2014-05-30')).to include(@listing1) 
+      expect(@nabe1.neighborhood_openings('2014-05-01', '2014-05-30')).not_to include(@listing1) 
+      # expect(@nabe1.neighborhood_openings('2014-05-01', '2014-05-30')).to include(@listing1)
     end 
   end
 
